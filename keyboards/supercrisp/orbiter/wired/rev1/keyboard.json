@@ -1,8 +1,9 @@
 {
-    "manufacturer": "kjeller",
-    "keyboard_name": "orbiter_wired",
-    "maintainer": "kjeller",
-    "bootloader": "stm32-dfu",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x5555"
+    },
+    
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
@@ -10,88 +11,23 @@
         "extrakey": true,
         "mousekey": true
     },
-    "split": {
-        "enabled": true
-    },
     "matrix_pins": {
         "cols": [ "A5", "A6", "A7", "A8", "A9", "A10"],
         "rows": ["A0", "A1", "A2", "A3", "A4"]
     },
-    "processor": "STM32F072",
-    "url": "",
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
-    },
-    "layout_aliases": {
-        "LAYOUT": "LAYOUT_split_26key"
-    },
-    "layouts": {
-        "LAYOUT_split_26key": {
-            "layout": [
-                {"matrix": [0, 0], "x": 0, "y": 0.25},
-                {"matrix": [0, 1], "x": 1, "y": 0.50},
-                {"matrix": [0, 2], "x": 2, "y": 0.75},
-                {"matrix": [0, 3], "x": 3, "y": 0.50},
-                {"matrix": [0, 4], "x": 4, "y": 0.25},
-                {"matrix": [0, 5], "x": 5, "y": 0},
-
-                {"matrix": [5, 5], "x": 5, "y": 0},
-                {"matrix": [5, 4], "x": 4, "y": 0.25},
-                {"matrix": [5, 3], "x": 3, "y": 0.50},
-                {"matrix": [5, 2], "x": 2, "y": 0.75},
-                {"matrix": [5, 1], "x": 1, "y": 0.50},
-                {"matrix": [5, 0], "x": 0, "y": 0.25},
-
-                {"matrix": [1, 0], "x": 0, "y": 1.25},
-                {"matrix": [1, 1], "x": 1, "y": 1.50},
-                {"matrix": [1, 2], "x": 2, "y": 1.75},
-                {"matrix": [1, 3], "x": 3, "y": 1.50},
-                {"matrix": [1, 4], "x": 4, "y": 1.25},
-                {"matrix": [1, 5], "x": 5, "y": 1},
-
-                {"matrix": [6, 0], "x": 0, "y": 1.25},
-                {"matrix": [6, 5], "x": 5, "y": 1},
-                {"matrix": [6, 4], "x": 4, "y": 1.25},
-                {"matrix": [6, 3], "x": 3, "y": 1.50},
-                {"matrix": [6, 2], "x": 2, "y": 1.75},
-                {"matrix": [6, 1], "x": 1, "y": 1.50},
-                
-                {"matrix": [2, 0], "x": 0, "y": 2.25},
-                {"matrix": [2, 1], "x": 1, "y": 2.50},
-                {"matrix": [2, 2], "x": 2, "y": 2.75},
-                {"matrix": [2, 3], "x": 3, "y": 2.50},
-                {"matrix": [2, 4], "x": 4, "y": 2.25},
-                {"matrix": [2, 5], "x": 5, "y": 2},
-
-                {"matrix": [7, 5], "x": 5, "y": 2},
-                {"matrix": [7, 4], "x": 4, "y": 2.25},
-                {"matrix": [7, 3], "x": 3, "y": 2.50},
-                {"matrix": [7, 2], "x": 2, "y": 2.75},
-                {"matrix": [7, 1], "x": 1, "y": 2.50},
-                {"matrix": [7, 0], "x": 0, "y": 2.25},
-                
-                {"matrix": [3, 0], "x": 0, "y": 3.25},
-                {"matrix": [3, 1], "x": 1, "y": 3.50},
-                {"matrix": [3, 2], "x": 2, "y": 3.75},
-                {"matrix": [3, 3], "x": 3, "y": 3.50},
-                {"matrix": [3, 4], "x": 4, "y": 3.25},
-                {"matrix": [3, 5], "x": 5, "y": 3},
-
-                {"matrix": [8, 5], "x": 5, "y": 3},
-                {"matrix": [8, 4], "x": 4, "y": 3.25},
-                {"matrix": [8, 3], "x": 3, "y": 3.50},
-                {"matrix": [8, 2], "x": 2, "y": 3.75},
-                {"matrix": [8, 1], "x": 1, "y": 3.50},
-                {"matrix": [8, 0], "x": 0, "y": 3.25},
-
-                {"matrix": [4, 0], "x": 0, "y": 2.75},
-                {"matrix": [4, 1], "x": 1, "y": 3.75},
-
-                {"matrix": [9, 1], "x": 1, "y": 3.75},
-                {"matrix": [9, 0], "x": 0, "y": 2.75}
-            ]
+    "split": {
+        "enabled": true,
+        "transport": {
+            "protocol" : "serial",
+            "sync": {
+                "indicators": true,
+                "layer_state": true
+            }
+        },
+        "usb_detect" : {
+            "enabled" : true
         }
-    }
+    },
+    "processor": "STM32F072",
+    "bootloader": "stm32-dfu"
 }
