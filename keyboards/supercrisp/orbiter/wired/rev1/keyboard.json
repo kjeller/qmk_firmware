@@ -1,15 +1,11 @@
 {
     "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x5555"
+        "device_version": "1.0.0"
     },
-    
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
-        "command": true,
-        "extrakey": true,
-        "mousekey": true
+        "command": true
     },
     "matrix_pins": {
         "cols": [ "A5", "A6", "A7", "A8", "A9", "A10"],
@@ -23,9 +19,6 @@
                 "indicators": true,
                 "layer_state": true
             }
-        },
-        "usb_detect" : {
-            "enabled" : true
         }
     },
     "processor": "STM32F072",

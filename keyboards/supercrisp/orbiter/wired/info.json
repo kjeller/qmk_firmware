@@ -1,10 +1,11 @@
 {
     "manufacturer": "kjeller",
-    "keyboard_name": "orbiter_wired",
+    "keyboard_name": "Orbiter Wired",
     "maintainer": "kjeller",
     "url": "https://github.com/kjeller/orbiter_keyboard",
     "usb": {
-        "vid": "0xBABA"
+        "vid": "0xBABA",
+        "pid" : "0xBEEF"
     },
     "layout_aliases": {
         "LAYOUT": "LAYOUT_split_26key"
@@ -33,12 +34,12 @@
                 {"matrix": [1, 4], "x": 4, "y": 1.25},
                 {"matrix": [1, 5], "x": 5, "y": 1},
 
-                {"matrix": [6, 0], "x": 0, "y": 1.25},
                 {"matrix": [6, 5], "x": 5, "y": 1},
                 {"matrix": [6, 4], "x": 4, "y": 1.25},
                 {"matrix": [6, 3], "x": 3, "y": 1.50},
                 {"matrix": [6, 2], "x": 2, "y": 1.75},
                 {"matrix": [6, 1], "x": 1, "y": 1.50},
+                {"matrix": [6, 0], "x": 0, "y": 1.25},
                 
                 {"matrix": [2, 0], "x": 0, "y": 2.25},
                 {"matrix": [2, 1], "x": 1, "y": 2.50},
@@ -70,9 +71,9 @@
 
                 {"matrix": [4, 0], "x": 0, "y": 2.75},
                 {"matrix": [4, 1], "x": 1, "y": 3.75},
-
-                {"matrix": [9, 1], "x": 1, "y": 3.75},
-                {"matrix": [9, 0], "x": 0, "y": 2.75}
+                
+                {"matrix": [9, 0], "x": 0, "y": 2.75},
+                {"matrix": [9, 1], "x": 1, "y": 3.75}
             ]
         }
     }
