@@ -6,7 +6,8 @@
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
-        "oled": true
+        "oled": true,
+        "wpm": true
     },
     "matrix_pins": {
         "cols": ["A5", "A6", "A7", "A8", "A9", "A10"],
